@@ -1,0 +1,51 @@
+/* card.css */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes popUp {
+    0% {
+      transform: translateY(20px);
+      opacity: 0.5;
+    }
+    50% {
+      transform: translateY(-10px);
+      opacity: 0.75;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+    }
+    .card {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 100%;
+    }
+  }
+  

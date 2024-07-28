@@ -1,5 +1,4 @@
-'use client'
-import React, { useState } from 'react';
+
 
 export default function SquareListingPanel() {
     return (
@@ -44,4 +43,3 @@ export default function SquareListingPanel() {
     styleSheet.innerText = styles;
     document.head.appendChild(styleSheet);
   }
-  
