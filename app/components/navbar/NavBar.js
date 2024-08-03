@@ -12,10 +12,16 @@ export default function NavBar() {
 
   const handleClassesDropdownToggle = () => {
     setIsClassesDropdownOpen(!isClassesDropdownOpen);
+    if (isExamsDropdownOpen) {
+      setIsExamsDropdownOpen(false);
+    }
   };
 
   const handleExamsDropdownToggle = () => {
     setIsExamsDropdownOpen(!isExamsDropdownOpen);
+    if (isClassesDropdownOpen) {
+      setIsClassesDropdownOpen(false);
+    }
   };
 
   // Close dropdowns when clicking outside

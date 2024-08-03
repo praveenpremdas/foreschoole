@@ -1,0 +1,43 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap');
+
+/* Custom font styles */
+.sb-font-heading {
+  font-family: 'Pacifico', cursive;
+}
+
+.sb-font-body-head {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+.sb-font-body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}

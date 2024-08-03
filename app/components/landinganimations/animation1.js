@@ -17,9 +17,9 @@ const Animation1 = () => {
     ];
 
     useEffect(() => {
-        const textTimeout = setTimeout(() => setShowText(true), 1500);
-        const imageTimeout = setTimeout(() => setShowImage(true), 3000);
-        const pointsTimeout = setTimeout(() => setShowPoints(true), 4500);
+        const textTimeout = setTimeout(() => setShowText(true),100);
+        const imageTimeout = setTimeout(() => setShowImage(true), 500);
+        const pointsTimeout = setTimeout(() => setShowPoints(true), 1000);
 
         let pointInterval;
 
@@ -57,7 +57,7 @@ const Animation1 = () => {
                     )}
                     {showPoints && (
                         <div className="mt-6 text-base font-bold font-serif">
-                            <p className="opacity-0 animate-fadeIn">
+                            <p className="opacity-0 animate-fadeIn sb-ani-p">
                                 {points[currentPointIndex]}
                             </p>
                         </div>

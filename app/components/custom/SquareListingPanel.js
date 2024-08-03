@@ -1,8 +1,9 @@
-
+import React from 'react';
 
 export default function SquareListingPanel() {
-    return (
-      <div className="max-w-md mx-auto mt-10 p-6 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 rounded-3xl shadow-lg transform transition-transform duration-300 hover:scale-105">
+  return (
+    <div className="relative w-full h-screen bg-cover bg-no-repeat bg-center" style={{ backgroundImage: 'url(your-image-url.jpg)' }}>
+      <div className="absolute top-0 left-0 max-w-md mt-10 p-6 bg-gradient-to-r from-gray-100 via-gray-200 to-gray-300 rounded-3xl shadow-lg transform transition-transform duration-300 hover:scale-105">
         <h2 className="text-3xl font-bold text-center mb-6 text-gray-700">Button Grid</h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           {Array.from({ length: 9 }).map((_, index) => (
@@ -15,31 +16,32 @@ export default function SquareListingPanel() {
           ))}
         </div>
       </div>
-    );
+    </div>
+  );
+}
+
+// Add the CSS for the fadeInBottom animation
+const styles = `
+@keyframes fadeInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  // Add the CSS for the fadeInBottom animation
-  const styles = `
-  @keyframes fadeInBottom {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .animate-fadeInBottom {
-    animation: fadeInBottom 0.7s ease-out;
-  }
-  `;
-  
-  // Inject styles into the document
-  if (typeof document !== 'undefined') {
-    const styleSheet = document.createElement('style');
-    styleSheet.type = 'text/css';
-    styleSheet.innerText = styles;
-    document.head.appendChild(styleSheet);
-  }
+}
+
+.animate-fadeInBottom {
+  animation: fadeInBottom 0.7s ease-out;
+}
+`;
+
+// Inject styles into the document
+if (typeof document !== 'undefined') {
+  const styleSheet = document.createElement('style');
+  styleSheet.type = 'text/css';
+  styleSheet.innerText = styles;
+  document.head.appendChild(styleSheet);
+}
