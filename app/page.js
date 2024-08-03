@@ -8,23 +8,25 @@ import BookATrail from "./components/custom/BookATrail"
 import StickyBar from "./components/navbar/StickyBar"
 import ClientFaq from "./components/faq/ClientFaq"
 import Footer from "./components/footer/Footer"
+import StudentBenefits from "./components/studentbenifits/StudentBenefits"
 import Animation1 from "./components/landinganimations/animation1"
 
 export default function Home() {
   return (
     <main>
       <NavBar/>
-      
-      {/* <SquareListingPanel/>
+      <Animation1/>
+      <SquareListingPanel/>
+      <StudentBenefits/>
+      {/* 
       <ImageCarousel/>
       <BookATrail/>
-      <StickyBar/>
       <ClientFaq/>
-      <Footer/>
       <Testimonials/> 
        <CardCarousel/>  */}
       {/* <Carousel3d/> */}
-      <Animation1/>
+      <Footer/>
+      <StickyBar/>
     </main>
   );
 }
