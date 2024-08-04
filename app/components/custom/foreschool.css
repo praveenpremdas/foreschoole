@@ -1,0 +1,47 @@
+/* foreschool.css */
+.foreschool-container {
+    padding: 2rem;
+    /* background-color: #f0f0f0; */
+  }
+  
+  .main-heading {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .foreschool-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .foreschool-section {
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .sub-heading {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 1rem;
+  }
+  
+  .content-container {
+    margin-bottom: 1rem;
+  }
+  

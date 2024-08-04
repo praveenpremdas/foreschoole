@@ -1,0 +1,35 @@
+/* pricing.css */
+.pricing-container {
+    padding: 2rem;
+    /* background-color: #f0f0f0; */
+  }
+  
+  .main-heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+  }
+  
+  .pricing-section {
+    max-width: 300px;
+    margin: 1rem;
+    text-align: center;
+  }
+  
+  .section-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #555;
+  }
+  

@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from 'react';
 import './animation1.css'; // Import your CSS file
+import SquareListingPanel from "../custom/SquareListingPanel"
 
 const Animation1 = () => {
     const [showText, setShowText] = useState(false);
@@ -38,11 +39,11 @@ const Animation1 = () => {
     }, [showPoints]);
 
     return (
-        <section className="bg-gray-200 pb-10 flex flex-col justify-center items-center text-black overflow-hidden">
+        <section className="bg-white pb-10 flex flex-col justify-center items-center text-black overflow-hidden">
             <div className='w-full h-full flex flex-col md:flex-row justify-center items-center text-center'>
                 <div className="w-full md:w-1/2 p-4 md:text-left font-left text-left-area">
                     {showText && (
-                        <p className="text-lg md:text-lg font-bold typing-animation">
+                        <p className="text-lg md:text-lg typing-animation">
                             Engage in face-to-face interactive sessions for math and science.
                             <br />
                             Experience live online classes with personalized attention.

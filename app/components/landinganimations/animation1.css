@@ -5,7 +5,9 @@
 
 /* Custom font styles */
 .font-left {
-  font-family: 'Pacifico', cursive;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .font-right {

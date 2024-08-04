@@ -9,22 +9,23 @@ export default function ClientFaq() {
   };
 
   return (
-    <section className="py-10 bg-gray-900 sm:py-16 lg:py-24">
+    <section className="py-10 bg-gray-200 sm:py-16 lg:py-24">
       <div className="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl font-bold leading-tight text-white sm:text-4xl lg:text-5xl">
+          <h2 className="text-3xl font-bold leading-tight text-gray-600 sm:text-4xl lg:text-5xl">
             Frequently Asked Questions
           </h2>
           <p className="max-w-xl mx-auto mt-4 text-base leading-relaxed text-gray-400">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do
           </p>
         </div>
         <div className="max-w-3xl mx-auto mt-8 space-y-4 md:mt-16">
           {[
-            { question: 'How to create an account?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
-            { question: 'How can I make payment using Paypal?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
-            { question: 'Can I cancel my plan?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
-            { question: 'How can I reach support?', answer: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.' },
+            { question: 'What classes does Foreschool offer?', answer: 'Foreschool offers maths and science classes for students in class 8th -12th across all boards(CBSE,ICSE,IGCSE,State Board etc)' },
+            { question: 'How do Foreschool classes work?', answer: 'Foreschool offers live Interactive online classes with expert tutors for math and sciences for class 8-12th.Foreschool master teacher takes 2 or more live classes per week with the student.Classes are conducted on Zoom Platform.Class size is up to 1:6 (but 1:1 is also available for Premium Subscribers)Master Tutor-student interaction is always 1:1 (even in group classes).To join a class, the student needs a desktop / laptop with a headphone and mic, and broadband internet.' },
+            { question: 'What is the frequency and duration of classes?', answer: 'We recommend two classes per week for each subject(Maths physics chemistry and biology).Each class is 60-90 mins long and class size is up to 1:6 (but 1:1 is also available for Premium subscribers).You CAN choose a class frequency and class timings that suit you.' },
+            { question: 'Are Foreschool’s programs applicable for all classes?', answer: 'Foreschool’s learning programs are for students from 8th to Class 12. We also offer programs for competitive exams like JEE, NEET, State entrance examinations,SAT etc' },
+            { question: 'What languages are the learning programs available in?', answer: 'The Foreschool’s programs are available only in English' },
+            { question: 'Do you provide customer support?', answer: 'Yes, we provide customer support for all our enrolled users. You can write to us at support@Foreschool.in or on 6366440333' },
           ].map((item, index) => (
             <div
               key={index}
