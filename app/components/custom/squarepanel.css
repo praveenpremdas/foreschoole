@@ -1,0 +1,75 @@
+
+.svg-animation-container svg {
+    width: 100%;
+  }
+  
+  #student {
+    animation: bounce 2s infinite ease-out alternate;
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(50px);
+    }
+  }
+  
+  #handRight1, #handRight2 {
+    animation: rotateHand 4s infinite alternate;
+    transform-origin: bottom left;
+    transform-box: fill-box;
+  }
+  
+   #handLeft1 {
+    animation: rotateLHand 1s infinite alternate;
+    transform-origin: bottom right;
+    transform-box: fill-box;
+  }
+  
+  @keyframes rotateHand {
+    0% {
+      transform: rotate(-5deg);
+    }
+  
+    70% {
+      transform: rotate(10deg);
+    }
+  }
+  
+  @keyframes rotateLHand {
+    0% {
+      transform: rotate(5deg);
+    }
+  
+    50% {
+      transform: rotate(0deg);
+    }
+  }
+  
+  #star1, #star2, #dot2, #dot3 {
+    animation: rotation 3s infinite alternate;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(4deg);
+    }
+  }
+  
+   #eye1, #eye2{
+    animation: rotation 3s infinite alternate;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-1deg);
+    }
+  }

@@ -10,21 +10,27 @@ import ClientFaq from "./components/faq/ClientFaq"
 import Footer from "./components/footer/Footer"
 import StudentBenefits from "./components/studentbenifits/StudentBenefits"
 import Animation1 from "./components/landinganimations/animation1"
+import OurClassrooms from "./components/custom/ourclassroom"
+import Pricing from "./components/custom/pricing"
+import ForeSchoolClasses from "./components/custom/ForeSchoolClasses"
 
 export default function Home() {
   return (
-    <main>
+    <main className='bg-gray-200'>
       <NavBar/>
       <Animation1/>
-      <SquareListingPanel/>
+      <OurClassrooms/>
+      <Testimonials/> 
+      <Pricing/>
+      <ForeSchoolClasses/>
+      {/* <SquareListingPanel/> */}
       <StudentBenefits/>
       {/* 
       <ImageCarousel/>
       <BookATrail/>
-      <ClientFaq/>
-      <Testimonials/> 
        <CardCarousel/>  */}
-      {/* <Carousel3d/> */}
+      <Carousel3d/>
+      <ClientFaq/>
       <Footer/>
       <StickyBar/>
     </main>

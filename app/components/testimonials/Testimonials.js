@@ -29,11 +29,12 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <section className="bg-white dark:bg-gray-900">
-      <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6">
+    <section className="bg-gray-200 dark:bg-gray-900">
+      <div className="max-w-screen-xl px-4 py-8 mx-auto text-center lg:py-16 lg:px-6 bg-gray-200">
+        <h2 className="text-3xl font-bold text-gray-700 dark:text-gray-300 mb-6">What Our Clients Say</h2>
         <figure className="max-w-screen-md mx-auto transition-opacity duration-1000 ease-in-out" key={currentIndex}>
           <svg
-            className="h-12 mx-auto mb-3 text-gray-400 dark:text-gray-600"
+            className="h-20 mx-auto text-gray-400 dark:text-gray-600"
             viewBox="0 0 24 27"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

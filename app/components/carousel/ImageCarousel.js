@@ -28,7 +28,7 @@ export default function ImageCarousel() {
   };
 
   return (
-    <div id="default-carousel" className="relative w-full" data-carousel="slide">
+    <div id="default-carousel" className="relative w-96" data-carousel="slide">
       {/* Carousel wrapper */}
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         {images.map((image, index) => (
